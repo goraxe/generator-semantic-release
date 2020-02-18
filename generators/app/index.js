@@ -12,6 +12,9 @@ const releasrc = {
   ]
 };
 
+const badge =
+  "[![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)";
+
 module.exports = class extends Generator {
   prompting() {
     // Have Yeoman greet the user.
@@ -32,14 +35,23 @@ module.exports = class extends Generator {
   }
 
   writing() {
-    if (this.fs.exists(".releaserc")) {
-      this.fs.extendJSON(".releaserc", releasrc);
+    if (this.fs.exists(this.destinationPath(".releaserc"))) {
+      this.fs.extendJSON(this.destinationPath(".releaserc"), releasrc);
     } else {
-      this.fs.writeJSON(".releaserc", releasrc);
+      this.fs.writeJSON(this.destinationPath(".releaserc"), releasrc);
+    }
+
+    if (this.fs.exists(this.destinationPath("README.md"))) {
+      let readme = this.fs.read(this.destinationPath("README.md"));
+      if (!readme.includes(badge)) {
+        readme = badge + "\n" + readme;
+      }
+
+      this.fs.write(this.destinationPath("README.md"), readme);
     }
   }
 
-  install() {
-    this.installDependencies();
+  end() {
+    this.config.save();
   }
 };
