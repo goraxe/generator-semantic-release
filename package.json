@@ -17,6 +17,7 @@
     "yeoman-generator"
   ],
   "devDependencies": {
+    "@semantic-release/git": "^9.0.0",
     "coveralls": "^3.0.7",
     "eslint": "^6.6.0",
     "eslint-config-prettier": "^6.6.0",
@@ -27,6 +28,7 @@
     "jest": "^25.1.0",
     "lint-staged": "^10.0.7",
     "prettier": "^1.19.1",
+    "semantic-release": "^17.0.4",
     "yeoman-assert": "^3.1.0",
     "yeoman-test": "^2.1.0"
   },
