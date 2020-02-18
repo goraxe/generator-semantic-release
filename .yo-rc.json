@@ -1,0 +1,9 @@
+{
+  "generator-node": {
+    "promptValues": {
+      "authorName": "goraxe",
+      "authorEmail": "goraxe@gmail.com",
+      "authorUrl": ""
+    }
+  }
+}
