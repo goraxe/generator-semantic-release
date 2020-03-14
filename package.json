@@ -1,6 +1,6 @@
 {
   "name": "@goraxe/generator-semantic-release",
-  "version": "0.0.0",
+  "version": "1.0.2",
   "description": "A simple semantic release composable generator",
   "homepage": "github.com/goraxe/generator-semantic-release",
   "author": {
