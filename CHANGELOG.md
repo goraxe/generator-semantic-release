@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/goraxe/generator-semantic-release/compare/v1.0.2...v1.0.3) (2023-12-13)
+
+
+### Bug Fixes
+
+* **deps:** update dependency yeoman-generator to v4.13.0 ([8efd9c9](https://github.com/goraxe/generator-semantic-release/commit/8efd9c9767f5de4e943947e857b70798862af92d))
+
 ## [1.0.2](https://github.com/goraxe/generator-semantic-release/compare/v1.0.1...v1.0.2) (2020-03-14)
 
 
