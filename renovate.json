@@ -8,6 +8,11 @@
       "automerge": true
     },
     {
+      "matchUpdateTypes": ["major"],
+      "matchDepTypes": ["devDependencies"],
+      "automerge": true
+    },
+    {
       "matchUpdateTypes": ["minor", "patch"],
       "matchCurrentVersion": "!/^0/",
       "automerge": true
