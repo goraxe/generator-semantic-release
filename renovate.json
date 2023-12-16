@@ -9,7 +9,7 @@
     },
     {
       "matchUpdateTypes": ["major"],
-      "matchDepTypes": ["devDependencies"],
+      "matchDepTypes": ["devDependencies", "action"],
       "automerge": true
     },
     {
