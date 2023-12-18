@@ -32,4 +32,4 @@ jobs:
           git config --global user.name "Your Name"
       - run: yarn test
         env:
-          NODE_OPTIONS: "--experimetnal-vm-modules"
+          NODE_OPTIONS: "--experimental-vm-modules"
