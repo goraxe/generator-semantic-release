@@ -44,7 +44,7 @@
     "node": ">= 10.0.0"
   },
   "dependencies": {
-    "chalk": "^3.0.0",
+    "chalk": "^5.0.0",
     "yeoman-generator": "^4.5.0",
     "yosay": "^3.0.0"
   },
