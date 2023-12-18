@@ -3,6 +3,7 @@
   "version": "1.0.4",
   "description": "A simple semantic release composable generator",
   "homepage": "github.com/goraxe/generator-semantic-release",
+  "type": "module",
   "author": {
     "name": "goraxe",
     "email": "goraxe@gmail.com",
@@ -20,8 +21,11 @@
     "yeoman-generator"
   ],
   "devDependencies": {
+    "@babel/core": "^7.23.6",
+    "@babel/preset-env": "^7.23.6",
     "@semantic-release/changelog": "^6.0.0",
     "@semantic-release/git": "^10.0.0",
+    "babel-jest": "^29.7.0",
     "coveralls": "^3.0.7",
     "eslint": "^8.0.0",
     "eslint-config-prettier": "^9.0.0",
@@ -34,7 +38,7 @@
     "prettier": "^1.19.1",
     "semantic-release": "^22.0.0",
     "yeoman-assert": "^3.1.0",
-    "yeoman-test": "^2.1.0"
+    "yeoman-test": "^7.0.0"
   },
   "engines": {
     "node": ">= 10.0.0"

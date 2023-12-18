@@ -2,11 +2,9 @@ name: CI
 
 # Configures this workflow to run every time a change is pushed to the branch called `release`.
 on:
-  push:
-    branches: ["*/*"]
   pull_request:
 
-# There is a single job in this workflow. It's configured to run on the latest available version of Ubuntu.
+    # There is a single job in this workflow. It's configured to run on the latest available version of Ubuntu.
 jobs:
   pre-commit:
     runs-on: ubuntu-latest
@@ -33,3 +31,5 @@ jobs:
           git config --global user.email "you@example.com"
           git config --global user.name "Your Name"
       - run: yarn test
+        env:
+          NODE_OPTIONS: "--experimental-vm-modules"
