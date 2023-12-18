@@ -8,8 +8,8 @@ const releasrc = {
     "@semantic-release/commit-analyzer",
     "@semantic-release/release-notes-generator",
     "@semantic-release/changelog",
-    "@semantic-release/git"
-  ]
+    "@semantic-release/git",
+  ],
 };
 
 const badge =
@@ -21,14 +21,14 @@ export default class extends Generator {
     this.log(
       yosay(
         `Welcome to the groovy ${chalk.red(
-          "generator-semantic-release"
-        )} generator!`
-      )
+          "generator-semantic-release",
+        )} generator!`,
+      ),
     );
 
     const prompts = [];
 
-    return this.prompt(prompts).then(props => {
+    return this.prompt(prompts).then((props) => {
       // To access props later use this.props.someAnswer;
       this.props = props;
     });
