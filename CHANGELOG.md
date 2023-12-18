@@ -1,3 +1,10 @@
+## [1.0.6](https://github.com/goraxe/generator-semantic-release/compare/v1.0.5...v1.0.6) (2023-12-18)
+
+
+### Bug Fixes
+
+* **deps:** update dependency chalk to v5 ([3811ed3](https://github.com/goraxe/generator-semantic-release/commit/3811ed35f983eaac317b1da2e0aa1aa5f244a34c))
+
 ## [1.0.5](https://github.com/goraxe/generator-semantic-release/compare/v1.0.4...v1.0.5) (2023-12-18)
 
 
