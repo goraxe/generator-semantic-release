@@ -1,3 +1,10 @@
+## [1.0.5](https://github.com/goraxe/generator-semantic-release/compare/v1.0.4...v1.0.5) (2023-12-18)
+
+
+### Bug Fixes
+
+* **deps:** update dependency yosay to v3 ([78ff75f](https://github.com/goraxe/generator-semantic-release/commit/78ff75f420155f3770f9d058297d7222046fc795))
+
 ## [1.0.4](https://github.com/goraxe/generator-semantic-release/compare/v1.0.3...v1.0.4) (2023-12-17)
 
 
