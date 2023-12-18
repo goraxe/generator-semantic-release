@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/goraxe/generator-semantic-release/compare/v1.0.3...v1.0.4) (2023-12-17)
+
+
+### Bug Fixes
+
+* **renovate:** automerge github actions ([d2fa437](https://github.com/goraxe/generator-semantic-release/commit/d2fa4376430457743e238bc54db698dde6b24fa1))
+
 ## [1.0.3](https://github.com/goraxe/generator-semantic-release/compare/v1.0.2...v1.0.3) (2023-12-13)
 
 
