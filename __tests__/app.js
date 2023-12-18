@@ -28,8 +28,8 @@ describe("generator-semantic-release:app", () => {
             "@semantic-release/commit-analyzer",
             "@semantic-release/release-notes-generator",
             "@semantic-release/changelog",
-            "@semantic-release/git"
-          ]
+            "@semantic-release/git",
+          ],
         });
       });
   });
@@ -38,11 +38,11 @@ describe("generator-semantic-release:app", () => {
     return helpers
       .create(app, {}, {})
       .withPrompts({})
-      .inTmpDir(dir => {
+      .inTmpDir((dir) => {
         fs.writeJson(path.join(dir, ".releaserc"), { branches: ["master"] });
       })
       .run()
-      .then(runResult => {
+      .then((runResult) => {
         runResult.assertFile(".releaserc");
         // Assert.file(path.join(dir, ".releaserc"));
         runResult.assertJsonFileContent(".releaserc", {
@@ -51,8 +51,8 @@ describe("generator-semantic-release:app", () => {
             "@semantic-release/commit-analyzer",
             "@semantic-release/release-notes-generator",
             "@semantic-release/changelog",
-            "@semantic-release/git"
-          ]
+            "@semantic-release/git",
+          ],
         });
       });
   });
@@ -61,11 +61,11 @@ describe("generator-semantic-release:app", () => {
     it("updates with a button when there is no button", async () => {
       return helpers
         .create(app, {}, {})
-        .inTmpDir(dir => {
+        .inTmpDir((dir) => {
           fs.writeFile(path.join(dir, "README.md"), "content");
         })
         .run()
-        .then(runResult => {
+        .then((runResult) => {
           /*
           RunResult.inTmpDir((dir) => {
             fs.writeFile(path.join(dir, "README.md"), "content");
@@ -82,7 +82,7 @@ describe("generator-semantic-release:app", () => {
       return helpers
         .create(app, {}, {})
         .run()
-        .then(runResult => {
+        .then((runResult) => {
           runResult.assertNoFile("README.md");
         });
     });
@@ -90,11 +90,11 @@ describe("generator-semantic-release:app", () => {
     it("leaves well alone if there is already a button", async () => {
       return helpers
         .create(app, {}, {})
-        .inTmpDir(dir => {
+        .inTmpDir((dir) => {
           fs.writeFile(path.join(dir, "README.md"), badge);
         })
         .run()
-        .then(runResult => {
+        .then((runResult) => {
           runResult.assertFile("README.md");
           runResult.assertEqualsFileContent("README.md", badge);
         });
