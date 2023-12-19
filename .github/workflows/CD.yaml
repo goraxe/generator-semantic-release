@@ -37,8 +37,11 @@ jobs:
   release:
     needs: [ 'test', 'pre-commit' ]
     runs-on: ubuntu-latest
+    environment: publish
     steps:
       - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
       - name: Use Node.js
         uses: actions/setup-node@v4
         with:
@@ -48,4 +51,4 @@ jobs:
       - run: yarn run semantic-release
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
